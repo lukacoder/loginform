@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@600&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <title> Login Form </title>
+</head>
+<body>
+  <center><font face="JetBrains Mono">İnstagram : Kedy.Coder</font></center>
+  <form class="box">
+    <h1>  Login </h1>
+    <input type="text" name="username" placeholder="Username">
+    <input type="password" name="password" placeholder="Password">
+    <input type="submit" name="file" value="Login">
+  </form>
+  </body>
+  <style>
+   body{
+  margin : 0;
+  padding: 0;
+  font-family:sans-serif;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.box{
+  width: 300px;
+  padding: 40px;
+  position: absolute;
+  top: 50% ;
+  left: 50% ;
+  transform: translate(-50%, -50%);
+  background-color: #191919;
+  text-align: center;
+
+}
+.box h1{
+color: white;
+text-transform: uppercase;
+font-weight: 500;
+}
+.box input[type= "text"],.box input[type="password"]{
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #3498db ;
+  padding: 14px 10px;
+  width: 200px;
+  outline:none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.255;
+}
+.box input[type= "text"]:focus,.box input[type="password"]:focus{
+width: 280px;
+border-color: #2ecc71 ;
+}
+.box input[type= "submit"]{
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #2ecc71;
+  padding: 14px 40px;
+  width: 200px;
+  outline:none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.255;
+  cursor: pointer;
+}
+.box input[type= "submit"]:hover{
+  background: #2ecc71;
+}
+</style>
